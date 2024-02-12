@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/all.min.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body class="font1 mb-5    ">
+   <div class="d-flex justify-content-center vh-100  align-items-center ">
+    <div class="app w-75  ">
+        <div class="screen join-screen active d-block  ">
+            <div class="form p-5 ">
+               
+                <div class="form-content  w-50 m-auto">
+                    <h2 class=" fw-bold">Join Chatroom</h2>
+                    <div class="w-50 mb-4 line"></div>
+                    <div class="form-input">
+                        <label for="name" class="form-label float-start">User Name</label>
+                        <div class="clearfix"></div>
+                        <input type="text" id="userName" name="userName" class="form-control">
+                    </div>
+                    <div class="form-input ">
+                        <button id="join-user" class="button btn    btn-outline-dark  text-center m-auto w-25 mt-5 ">Join</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="screen chat-screen bg-danger vh-100  d-none">
+            <div class="header bg-dark text-white  p-2 d-flex justify-content-between align-items-center">
+                <div class="logo fw-bold fs-4">Chat Room</div>
+                <button id="exit-chat" class="btn btn-outline-light">Exit</button>
+            </div>
+            <div class="messages w-100 h-100 color overflow-auto  ">
+          
+            </div>
+            <div class="type-box w-100 d-flex  ">
+                <input type="text" name="" id="message-input" class="w-100 border-end-0 bg-light">
+                <button id="send-message" class=" button border-start-0  btn btn-dark">Send</button>
+            </div>
+
+        </div>
+    </div>
+   </div>
+   <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
